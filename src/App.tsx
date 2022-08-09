@@ -1,25 +1,26 @@
 import "./App.css";
-import User from "./components/User";
+import UserDemo from "./components/UserDemo";
 
-const user1 = {
-  name: "Bulbul Ahammed",
-  age: 27,
-  isSmoker: false,
-  lang: ["Bengali", "English"],
-};
-const user2 = {
-  name: "Farhad Ahammed",
-  age: 22,
-  isSmoker: false,
-  lang: ["Bengali", "English"],
-};
+const users = [
+  {
+    id: 1,
+    name: "Bulbul Ahammed",
+    email: "mdbulbulahammed@gmail.com",
+    age: 27,
+  },
+  {
+    id: 1,
+    name: "Rakibul Islam",
+    email: "rakibulislam@gmail.com",
+    age: 20,
+  },
+];
 
 function App() {
   return (
     <div className="App">
       <h1>User Management</h1>
-      <User user={user1} />
-      <User user={user2} />
+      <UserDemo users={users} />
     </div>
   );
 }
