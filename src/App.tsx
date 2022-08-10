@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import ButtonStyle from "./components/ButtonStyle";
+import NewUser from "./components/NewUser";
 function App() {
   const [count, setCount] = useState(0);
   const [user, setUser] = useState<null | User>(null);
@@ -26,8 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Style Props</h1>
-      <ButtonStyle btnStyle={btnStyles} />
+      <h1>Type Event Props</h1>
+      <NewUser />
     </div>
   );
 }
