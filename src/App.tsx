@@ -1,5 +1,5 @@
 import "./App.css";
-import UserDemo from "./components/UserDemo";
+import DataFetch from "./components/DataFetch";
 
 const users = [
   {
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>User Management</h1>
-      <UserDemo users={users} />
+      <DataFetch status="loading" />
     </div>
   );
 }
